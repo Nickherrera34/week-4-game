@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Crytals Collector Game</title>
+	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<script
+  		src="https://code.jquery.com/jquery-3.2.1.js"
+  		integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+  		crossorigin="anonymous">		
+  	</script>
+	<script type="text/javascript" src="assets/javascript/game.js"></script>
+</head>
+<body>
+
+	<section>
+		<div class="row" id="title-box">
+				<h1 class="title">CrystalCollector!</h1>
+		</div>
+	</section>
+
+	<section>
+		<div class="row" id="main-content">
+		<p class="directions">
+			You will be given a random number at the start of the game.<br><br>
+	
+			There are four crystals below. By clicking on the crystal you will add a specific amount of points to your total score.<br><br>
+		
+			You win the game by matching your total score to random number, you lose the game if your total score goes above the random number.<br><br>
+		
+			The value of each crystal is hidden from you until you click on it<br><br>
+		
+			Each time when the game starts, the game will change the value of each crystal<br><br>
+		</p>
+
+	</section>
+
+
+	<section>
+		<div class="row" id="scoreboard">
+			<div class="col-md-4">
+					
+						<h2 id="computer-number">0</h2>
+			
+			</div>
+
+			<div class="col-md-4">
+					<div id="result-tracker">
+						<h2 id="win-count">Wins: 0</h2>
+						<h2 id="loss-count">Losses: 0</h2>
+					</div>
+			</div>
+		</div>
+	</section>
+
+	<section>
+		<img src="assets/images/crystal-light.jpeg" id="crystal-1" class="crystals">
+		<img src="assets/images/cristal.jpg" id="crystal-2" class="crystals">
+		<img src="assets/images/crystal-skull.jpg" id="crystal-3" class="crystals">
+		<img src="assets/images/billy.jpg" id="crystal-4" class="crystals">
+
+	</section>
+
+	<section>
+		<div>
+			<h3 id="your-score">Your total score is:</h3>
+		</div>
+	</section>
+
+
+	<section>
+		<div class="row">
+			<div class="col-md-4">
+					
+						<h2 id="your-number">0</h2>
+					
+			</div>
+		</div>
+	</section>
+
+
+</body>
+</html>

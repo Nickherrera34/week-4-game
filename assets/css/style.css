@@ -1,0 +1,55 @@
+#title-box{
+	background-color: #c97126;
+	color: #fff;
+	display: inline-block;
+	padding: 20px;
+	margin:10px;
+}
+
+#main-content{
+	background-color: #fbe6cd;
+	padding: 20px;
+	margin-left: 10px;
+	margin-bottom: 10px;
+	display: inline-block;
+	color: #a7b884;
+}
+
+#scoreboard{
+	margin-left: 10px;
+}
+
+#computer-number{
+	background-color: #5bc880;
+	color: #5e3165;
+	height: 100px;
+	padding: 20px;
+	margin-left: -15px;
+}
+
+#result-tracker{
+	background-color: #49fdfd;
+	color: #2ba7a7;
+	display: inline-block;
+	padding: 20px;
+	height: 100px;
+}
+
+.crystals{
+	height: 150px;
+	margin-left: 10px;
+}
+
+#your-score, #your-number {
+	margin-left:10px;
+	background-color: #2ba296;
+	color: #fff;
+	display: inline-block;
+	width: 500px;
+	padding: 20px;
+}
+
+#your-number{
+	height: 100px;
+}
+
