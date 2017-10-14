@@ -6,30 +6,34 @@ $(document).ready(function(){
   var lossCounter = 0;
 
 
-//random computer numbers
+//creates a random number for the computer
   var computerChoice = Math.floor((Math.random() * 50) + 20);
   		// console.log(computerChoice)
   //random number into HTML
   $("#computer-number").html(computerChoice);
 
 
-  // Win Loss Tracker ---- I think I might be having issues with score or something. I cant get either of these statements to work!
+// Win and Loss counters
   var result = function (){
     if(yourScore === computerChoice){
       winCounter++;
-      $("#win-count").text("Wins: " + winCounter);
-      reset()
+      $("#win-count").text("Wins: " + winCounter);   
     }
     
     else if (yourScore > computerChoice){
       lossCounter++;
-      $("#loss-count").text("Losses: " + lossCounter++);
-      reset();
+      $("#loss-count").text("Losses: " + lossCounter++);     
     }
   }
 
+//Reset function --------- This is not working! 
+  function reset(){
+    var yourScore = 0;
+    var computerChoice = Math.floor((Math.random() * 50) + 20);
+  }
 
-//random crystal numbers
+
+//creates random numbers for crystals
   var crystalOne =  Math.floor((Math.random() * 12) + 1);
   		// console.log(crystalOne)
   var crystalTwo =  Math.floor((Math.random() * 12) + 1);
@@ -47,6 +51,8 @@ $(document).ready(function(){
     yourScore = crystalOne + yourScore;
     console.log(yourScore);
     $("#your-number").html(yourScore);
+    result();
+    reset();
   });
 
 //crystal 2
@@ -54,6 +60,8 @@ $(document).ready(function(){
     yourScore = crystalTwo + yourScore;
     // console.log(yourScore);
     $("#your-number").html(yourScore);
+    result();
+    reset();
   });
 
 //crystal 3
@@ -61,6 +69,8 @@ $(document).ready(function(){
     yourScore = crystalThree + yourScore;
     // console.log(yourScore);
     $("#your-number").html(yourScore);
+    result();
+    reset();
   });
 
 //crystal 4
@@ -68,14 +78,12 @@ $(document).ready(function(){
     yourScore = crystalFour + yourScore;
     // console.log(yourScore);
     $("#your-number").html(yourScore);
+    result();
+    reset();
   });
 
 
-//reset function
-  function reset(){
-    var yourScore = 0;
-    var computerChoice = Math.floor((Math.random() * 50) + 20);
-  }
+
 
 
 });
